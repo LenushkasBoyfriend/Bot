@@ -1,0 +1,86 @@
+{
+  "name": "AFK Bot",
+  "bot-account": {
+    "username": "Mahalle'nin Delisi",
+    "password": "",
+    "type": "offline"
+  },
+  "server": {
+    "ip": "31ibo311.aternos.me",
+    "port": 31502,
+    "version": "1.20.1",
+    "try-creative": false,
+    "forge": {
+      "enabled": true,
+      "forgeVersion": "47.4.10"
+    },
+    "protocol-fallback": {
+      "enabled": true,
+      "versions": [
+        "1.20.1"
+      ],
+      "switch-on-errors": [
+        "serverbound/minecraft:hello",
+        "decoderexception",
+        "decod",
+        "protocol",
+        "bad packet",
+        "you are using version",
+        "please specify the correct version"
+      ],
+      "cooldown-ms": 15000
+    }
+  },
+  "utils": {
+    "auto-auth": {
+      "enabled": true,
+      "password": "login7921"
+    },
+    "chat-log": true,
+    "auto-reconnect": true,
+    "auto-reconnect-delay": 2000,
+    "max-reconnect-delay": 120000
+  },
+  "wander": {
+    "enabled": true,
+    "minHopDistance": 40,
+    "maxHopDistance": 150,
+    "checkIntervalMs": 800,
+    "groundStuckMs": 8000,
+    "airStuckMs": 1800
+  },
+  "tasks": {
+    "enabled": true,
+    "minIntervalMs": 90000,
+    "maxIntervalMs": 240000,
+    "logsPerCycle": 4,
+    "searchRadius": 64,
+    "mineStone": true,
+    "stonePerCycle": 10,
+    "preferOres": true,
+    "oreBlocks": ["iron_ore", "deepslate_iron_ore", "coal_ore", "deepslate_coal_ore"]
+  },
+  "survival": {
+    "enabled": true,
+    "checkIntervalMs": 500,
+    "engageRadius": 12,
+    "fleeHealthThreshold": 10,
+    "fleeDistance": 20,
+    "fleeDurationMs": 6000,
+    "fightableMobs": [
+      "zombie", "husk", "drowned", "zombie_villager",
+      "skeleton", "stray",
+      "spider", "cave_spider",
+      "silverfish"
+    ]
+  },
+  "discord": {
+    "enabled": false,
+    "webhookUrl": "YOUR_DISCORD_WEBHOOK_URL_HERE",
+    "events": {
+      "connect": true,
+      "disconnect": true,
+      "chat": false
+    }
+  }
+}
